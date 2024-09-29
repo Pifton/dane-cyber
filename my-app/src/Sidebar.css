@@ -1,0 +1,22 @@
+.Sidebar{
+    background-color: #292a2c;
+    stop-color: aliceblue;
+    min-height: 100vh;
+    padding-left: 2vh;
+    align-items: center;
+    font-size: calc(2vmin);
+    border-spacing: 10px;
+}
+
+
+
+.Sidebar a{
+    color: white;
+}
+
+.sidebar-item{
+    display: none;
+}
+.sidebar-icon{
+    width: 100px;
+}
