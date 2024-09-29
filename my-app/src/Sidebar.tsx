@@ -14,33 +14,33 @@ export function LeftSidebar() {
 
         <Sidebar.ItemGroup className="TopGroup">
           <Sidebar.Item href="#" icon={MdMenu} className="FirstItem">
-            <span className="element-text">Dashboard</span>
+            <span className="element-text">Navigation</span>
           </Sidebar.Item>
         </Sidebar.ItemGroup>
 
         <Sidebar.ItemGroup className="BottomGroup">
           <Sidebar.Item href="#" icon={MdOutlineDashboard} className="BottomItem">
-            <span className="element-text">Kanban</span>
+            <span className="element-text">Dashboard</span>
           </Sidebar.Item>
 
           <Sidebar.Item href="#" icon={LuClipboardEdit} className="BottomItem">
-            <span className="element-text">Inbox</span>
+            <span className="element-text">Auditor</span>
           </Sidebar.Item>
 
           <Sidebar.Item href="#" icon={LuClipboardEdit} className="BottomItem">
-            <span className="element-text">Users</span>
+            <span className="element-text">Builder</span>
           </Sidebar.Item>
 
           <Sidebar.Item href="#" icon={HiShoppingBag} className="BottomItem">
-            <span className="element-text">Products</span>
+            <span className="element-text">Deployer</span>
           </Sidebar.Item>
 
           <Sidebar.Item href="#" icon={MdOutlineSettings} className="BottomItem">
-            <span className="element-text">Sign In</span>
+            <span className="element-text">Settings</span>
           </Sidebar.Item>
 
           <Sidebar.Item href="#" icon={PiSignOutBold} className="LastItem">
-            <span className="element-text">Sign Up</span>
+            <span className="element-text">Log out</span>
           </Sidebar.Item>
         </Sidebar.ItemGroup>
 

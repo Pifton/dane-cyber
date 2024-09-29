@@ -5,6 +5,7 @@ import { PiSignOutBold } from "react-icons/pi";
 import deviceList from './device.json';
 
 function Device() {
+     //recherche rapide
      const [searchTerm, setSearchTerm] = useState('');
 
     const filteredDevices = deviceList.filter(device =>
@@ -18,9 +19,6 @@ function Device() {
           </header>
           <input type="text" placeholder="Search..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)} className="Search" />
           <ul className='DeviceList'>
-               {/* {deviceList.map((device) => (
-                    <li className='Device-name'><strong>{device.name}</strong></li>
-               ))} */}
                {filteredDevices.map((device) => (
                     <li className='Device-name'><strong>{device.name}</strong></li>
                ))}
