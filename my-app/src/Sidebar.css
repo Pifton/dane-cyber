@@ -1,22 +1,61 @@
 .Sidebar{
-    background-color: #292a2c;
-    stop-color: aliceblue;
-    min-height: 100vh;
-    padding-left: 2vh;
+    background-color: #161c27;
+    height: 100vh;
+    width: min-content;
+    padding-right: 10px;
+    padding-left: 10px;
     align-items: center;
-    font-size: calc(2vmin);
-    border-spacing: 10px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
 }
-
-
-
-.Sidebar a{
-    color: white;
-}
-
-.sidebar-item{
+.element-text{
+    display: block;
     display: none;
+    font-size: medium;
 }
-.sidebar-icon{
-    width: 100px;
+/* Lorsque je vais sur la sidebar */
+ .Sidebar:hover{
+    width: min-content;
+ }
+.Sidebar:hover .element-text{
+    display: block;
+}
+
+ .Sidebar a{
+    color: rgb(207, 207, 207);
+}
+
+.Sidebar .TopGroup{
+    padding-top: 1.5vh;
+    position: relative;
+    width: 100%;
+    padding-bottom: 3vh;
+    
+}.Sidebar .TopGroup::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 20px);
+    left: -10px;
+    border-bottom: #6d6e70 solid 1px;
+    padding-top: 1.5vh;
+}
+
+
+/* ce qui suit ne fonctionne pas */
+
+.Sidebar .BottomItem{
+    bottom :0;
+    position: bottom;
+    width: 100%;
+    margin-bottom: 1.5vh;
+    font-size: 4vh;
+}
+.Sidebar .FirstItem{
+    font-size: 4vh;
+}
+.Sidebar .LastItem{
+    font-size: 4vh;
+
 }

@@ -1,7 +1,10 @@
 "use client";
 
 import { Sidebar } from "flowbite-react";
-import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, HiViewBoards } from "react-icons/hi";
+import { HiShoppingBag} from "react-icons/hi";
+import { MdMenu ,MdOutlineDashboard, MdOutlineSettings, } from "react-icons/md";
+import { LuClipboardEdit } from "react-icons/lu";
+import { PiSignOutBold } from "react-icons/pi";
 import './Sidebar.css';
 
 export function LeftSidebar() {
@@ -10,34 +13,34 @@ export function LeftSidebar() {
       <Sidebar.Items>
 
         <Sidebar.ItemGroup className="TopGroup">
-          <Sidebar.Item href="#" icon={HiChartPie}>
-            <span className="sidebar-item">Dashboard</span>
+          <Sidebar.Item href="#" icon={MdMenu} className="FirstItem">
+            <span className="element-text">Dashboard</span>
           </Sidebar.Item>
         </Sidebar.ItemGroup>
 
-        <Sidebar.ItemGroup>
-          <Sidebar.Item href="#" icon={HiViewBoards}>
-            <span className="sidebar-item">Kanban</span>
+        <Sidebar.ItemGroup className="BottomGroup">
+          <Sidebar.Item href="#" icon={MdOutlineDashboard} className="BottomItem">
+            <span className="element-text">Kanban</span>
           </Sidebar.Item>
 
-          <Sidebar.Item href="#" icon={HiInbox}>
-            <span className="sidebar-item">Inbox</span>
+          <Sidebar.Item href="#" icon={LuClipboardEdit} className="BottomItem">
+            <span className="element-text">Inbox</span>
           </Sidebar.Item>
 
-          <Sidebar.Item href="#" icon={HiUser}>
-            <span className="sidebar-item">Users</span>
+          <Sidebar.Item href="#" icon={LuClipboardEdit} className="BottomItem">
+            <span className="element-text">Users</span>
           </Sidebar.Item>
 
-          <Sidebar.Item href="#" icon={HiShoppingBag}>
-            <span className="sidebar-item">Products</span>
+          <Sidebar.Item href="#" icon={HiShoppingBag} className="BottomItem">
+            <span className="element-text">Products</span>
           </Sidebar.Item>
 
-          <Sidebar.Item href="#" icon={HiArrowSmRight}>
-            <span className="sidebar-item">Sign In</span>
+          <Sidebar.Item href="#" icon={MdOutlineSettings} className="BottomItem">
+            <span className="element-text">Sign In</span>
           </Sidebar.Item>
 
-          <Sidebar.Item href="#" icon={HiTable}>
-            <span className="sidebar-item">Sign Up</span>
+          <Sidebar.Item href="#" icon={PiSignOutBold} className="LastItem">
+            <span className="element-text">Sign Up</span>
           </Sidebar.Item>
         </Sidebar.ItemGroup>
 

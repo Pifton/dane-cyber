@@ -2,12 +2,16 @@ import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import LeftSidebar from './Sidebar'; 
+import Topbar from './Topbar';
+import Device from './Device';
 
 function App() {
   return (
     <div className="App">
       <LeftSidebar />
-      <header className="App-header">
+      <Topbar />
+      <Device />
+      {/* <header className="App-header">
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -19,9 +23,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-      <body>
-      </body>
+      </header> */}
     </div>
   );
 }

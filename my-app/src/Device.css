@@ -1,0 +1,38 @@
+.Devices {
+     text-align: left;
+     margin-left: calc(4vw + 60px);
+     height: calc(100vh - 60px);
+     width: 30vw; 
+     border-right: 1px solid rgb(199, 199, 199);
+     padding-right: 20px;
+     padding-top: 20px;
+     z-index: 1;
+ }
+ 
+.Header {
+     display: flex;
+     width: 100%;
+     border-bottom: 1px solid rgb(199, 199, 199);
+     gap: 15px;
+     padding-bottom: 15px;
+     font-size: large;
+     align-items: center;
+}
+
+.Search {
+     margin-top: 20px;
+}
+
+.DeviceList {
+     padding-top: 1vh;
+}
+.Search {
+     border-color:rgb(199, 199, 199);
+}
+
+.Device-name {
+     padding-top: 10px;
+     padding-bottom: 10px;
+}.Device-name:hover {
+     background-color: rgb(199, 199, 199);     
+}  
